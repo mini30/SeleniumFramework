@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="22070" started-at="2019-04-20T14:41:52Z" finished-at="2019-04-20T14:42:14Z">
+    <groups>
+      <group name="smoke">
+        <method signature="AmazonHomePageAfterSignInTest.printtextInSignPage()[pri:0, instance:com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest@52f759d7]" name="printtextInSignPage" class="com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest"/>
+        <method signature="AmazonHomePageAfterSignInTest.validateContentOnHomePage()[pri:1, instance:com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest@52f759d7]" name="validateContentOnHomePage" class="com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest"/>
+        <method signature="ProductTest.printText()[pri:0, instance:com.qa.AmazonTestCases.ProductTest@7cbd213e]" name="printText" class="com.qa.AmazonTestCases.ProductTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="SmokeTests" duration-ms="22070" started-at="2019-04-20T14:41:52Z" finished-at="2019-04-20T14:42:14Z">
+      <class name="com.qa.AmazonTestCases.StartStopDriverTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:com.qa.AmazonTestCases.StartStopDriverTest@6950e31]" name="startDriver" is-config="true" duration-ms="5425" started-at="2019-04-20T14:41:47Z" finished-at="2019-04-20T14:41:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.qa.AmazonTestCases.StartStopDriverTest@6950e31]" name="closeDriver" is-config="true" duration-ms="2119" started-at="2019-04-20T14:42:14Z" finished-at="2019-04-20T14:42:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.qa.AmazonTestCases.StartStopDriverTest -->
+      <class name="com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest">
+        <test-method status="PASS" signature="setUpandInitialize()[pri:0, instance:com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest@52f759d7]" name="setUpandInitialize" is-config="true" duration-ms="17596" started-at="2019-04-20T14:41:52Z" finished-at="2019-04-20T14:42:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpandInitialize -->
+        <test-method status="PASS" signature="printtextInSignPage()[pri:0, instance:com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest@52f759d7]" name="printtextInSignPage" duration-ms="8" started-at="2019-04-20T14:42:10Z" finished-at="2019-04-20T14:42:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printtextInSignPage -->
+        <test-method status="FAIL" signature="validateContentOnHomePage()[pri:1, instance:com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest@52f759d7]" name="validateContentOnHomePage" duration-ms="198" started-at="2019-04-20T14:42:13Z" finished-at="2019-04-20T14:42:13Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Hello] but found [Hello, Sign in]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Hello] but found [Hello, Sign in]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest.validateContentOnHomePage(AmazonHomePageAfterSignInTest.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateContentOnHomePage -->
+      </class> <!-- com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest -->
+      <class name="com.qa.AmazonTestCases.ProductTest">
+        <test-method status="PASS" signature="initialzePageObjectsAndMethodsInLoginPage()[pri:0, instance:com.qa.AmazonTestCases.ProductTest@7cbd213e]" name="initialzePageObjectsAndMethodsInLoginPage" is-config="true" duration-ms="3476" started-at="2019-04-20T14:42:10Z" finished-at="2019-04-20T14:42:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialzePageObjectsAndMethodsInLoginPage -->
+        <test-method status="PASS" signature="printText()[pri:0, instance:com.qa.AmazonTestCases.ProductTest@7cbd213e]" name="printText" duration-ms="2" started-at="2019-04-20T14:42:13Z" finished-at="2019-04-20T14:42:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printText -->
+      </class> <!-- com.qa.AmazonTestCases.ProductTest -->
+    </test> <!-- SmokeTests -->
+  </suite> <!-- Suite -->
+</testng-results>

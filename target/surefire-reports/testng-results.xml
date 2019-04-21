@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37539" started-at="2019-04-20T14:26:08Z" finished-at="2019-04-20T14:26:45Z">
+    <groups>
+      <group name="regression">
+        <method signature="AmazonHomePageAfterSignInTest.clickOnShopByCategoryOption()[pri:0, instance:com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest@11be3c5]" name="clickOnShopByCategoryOption" class="com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest"/>
+        <method signature="ProductTest.clickOnGivenTextOnSearchBox()[pri:0, instance:com.qa.AmazonTestCases.ProductTest@17c74e5]" name="clickOnGivenTextOnSearchBox" class="com.qa.AmazonTestCases.ProductTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test name="RegresssionTests" duration-ms="37539" started-at="2019-04-20T14:26:08Z" finished-at="2019-04-20T14:26:45Z">
+      <class name="com.qa.AmazonTestCases.StartStopDriverTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:com.qa.AmazonTestCases.StartStopDriverTest@af6cff]" name="startDriver" is-config="true" duration-ms="4094" started-at="2019-04-20T19:56:03Z" finished-at="2019-04-20T19:56:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.qa.AmazonTestCases.StartStopDriverTest@af6cff]" name="closeDriver" is-config="true" duration-ms="2125" started-at="2019-04-20T19:56:45Z" finished-at="2019-04-20T19:56:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.qa.AmazonTestCases.StartStopDriverTest -->
+      <class name="com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest">
+        <test-method status="PASS" signature="setUpandInitialize()[pri:0, instance:com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest@11be3c5]" name="setUpandInitialize" is-config="true" duration-ms="17186" started-at="2019-04-20T19:56:08Z" finished-at="2019-04-20T19:56:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpandInitialize -->
+        <test-method status="PASS" signature="clickOnShopByCategoryOption()[pri:0, instance:com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest@11be3c5]" name="clickOnShopByCategoryOption" duration-ms="136" started-at="2019-04-20T19:56:25Z" finished-at="2019-04-20T19:56:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnShopByCategoryOption -->
+      </class> <!-- com.qa.AmazonTestCases.AmazonHomePageAfterSignInTest -->
+      <class name="com.qa.AmazonTestCases.ProductTest">
+        <test-method status="PASS" signature="initialzePageObjectsAndMethodsInLoginPage()[pri:0, instance:com.qa.AmazonTestCases.ProductTest@17c74e5]" name="initialzePageObjectsAndMethodsInLoginPage" is-config="true" duration-ms="2353" started-at="2019-04-20T19:56:25Z" finished-at="2019-04-20T19:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialzePageObjectsAndMethodsInLoginPage -->
+        <test-method status="PASS" signature="clickOnGivenTextOnSearchBox()[pri:0, instance:com.qa.AmazonTestCases.ProductTest@17c74e5]" name="clickOnGivenTextOnSearchBox" duration-ms="17852" started-at="2019-04-20T19:56:27Z" finished-at="2019-04-20T19:56:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnGivenTextOnSearchBox -->
+      </class> <!-- com.qa.AmazonTestCases.ProductTest -->
+    </test> <!-- RegresssionTests -->
+  </suite> <!-- Suite -->
+</testng-results>
